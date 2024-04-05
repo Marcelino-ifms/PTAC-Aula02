@@ -20,6 +20,10 @@ export default function Main(){
     ]);
   };
 
+  const deletar = (index) => {
+    
+  }
+
   console.table(listaContatos)
     return(
       <main>
@@ -34,7 +38,8 @@ export default function Main(){
                 />
 
                 <button>Cadastre-se</button>
-                {nome}
+          
+          
 
          <br/>
          <br/>
@@ -52,7 +57,7 @@ export default function Main(){
          />
 
           <button>Cadastre-se</button>
-         {telefone}
+      
          
            <br/>
            <br/>
@@ -67,9 +72,18 @@ export default function Main(){
                 />
                 
                   <button>Cadastre-se</button>
-                {email}
+         
 
          </form>
+
+         {listaContatos.map((contato, index)=> 
+         <div key={index}>
+               <p>{contato.nomeSalvo}</p>
+               <p>{contato.telefoneSalvo}</p>
+               <p>{contato.emailSalvo}</p>
+               <button onClick={deletar}>Deletar</button>
+         </div>
+         )}
       </main>
     );
 }
