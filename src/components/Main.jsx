@@ -29,7 +29,7 @@ export default function Main(){
   return(
     <div className="Registro">
     <main>
-      <form action=""  onSubmit={registrar}>
+      <form action=""  onSubmit={registrar} className="Formulario">
         <label htmlFor="nome"> Nome:  </label>
         <input
           type="text"
@@ -53,15 +53,16 @@ export default function Main(){
           value={email}
           onChange={(event)=> setEmail(event.target.value)}
         />
-     
+
         <button>Cadastre-se</button>
       </form>
     <div className="DadosSalvos">
       {listaContatos.map((contato, index) => 
-        <div key={index}>
-          <p>{contato.nomeSalvo}</p>
-          <p>{contato.telefoneSalvo}</p>
-          <p>{contato.emailSalvo}</p>
+        <div key={index} className="Contato">
+          <h2>Contato {index + 1}</h2>
+          <p><strong>Nome:</strong> {contato.nomeSalvo}</p> 
+          <p><strong>Telefone:</strong> {contato.telefoneSalvo}</p>
+          <p><strong>Email:</strong> {contato.emailSalvo}</p>
         <div className="Botao">  <button onClick={() => deletar(index)}>Deletar</button>  </div>
         </div>
       
@@ -71,4 +72,3 @@ export default function Main(){
     </div>
   );
 }
-
