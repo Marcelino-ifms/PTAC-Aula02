@@ -177,3 +177,20 @@ p{
 input{
 height: 20px;
 }
+
+.Contato p{
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  margin-left: 10px;
+}
+
+.Botao button{
+  font-family: Arial;
+}
+
+Botao button:hover{
+  background-color: red;
+  color: white;
+}
+
