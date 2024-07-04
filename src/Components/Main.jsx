@@ -1,79 +1,74 @@
+
 import { useState } from "react";
 
-export default function Main() {
-  const [nome, setNome] = useState("");
-  const [numero, setNumero] = useState("");
-  const [email, setEmail] = useState("");
-  const [listaContatos, setListaContatos] = useState([]);
+export default function Main(){
+  const[nome, setNome] = useState("");
+  const[telefone, setTelefone] = useState(0);
+  const[email, setEmail] = useState("");
+  const[listaContatos, setListaContatos] = useState([]);
 
   const registrar = (event) => {
     event.preventDefault();
-    setListaContatos([
-      ...listaContatos,
+    setListaContatos([...listaContatos,
       {
         nomeSalvo: nome,
-        telefoneSalvo: numero,
+        telefoneSalvo: telefone,
         emailSalvo: email,
-      },
+      }
     ]);
-    setNome("");
-    setNumero("");
-    setEmail("");
   };
 
   const deletar = (index) => {
-    const newListaContatos = [...listaContatos];
-    newListaContatos.splice(index, 1);
-    setListaContatos(newListaContatos);
+    const novosContatos = [...listaContatos];
+    novosContatos.splice(index, 1);
+    setListaContatos(novosContatos);
   };
 
   console.table(listaContatos);
-  return (
+
+  return(
+    <div className="Registro">
     <main>
-      <form action="" onSubmit={registrar}>
-        <div id="fundoInput" className="classic">
-          <label htmlFor="nome"> Nome: </label>
-          <input
-            type="text"
-            name="nome-contato"
-            id="nome"
-            value={nome}
-            onChange={(event) => setNome(event.target.value)}
-          />
+      <form action=""  onSubmit={registrar} className="Formulario">
+        <label htmlFor="nome"> Nome:  </label>
+        <input
+          type="text"
+          name="" id=""
+          value={nome}
+          onChange={(event)=> setNome(event.target.value)}
+        />
+       
+        <label htmlFor="telefone"> Telefone:  </label>
+        <input
+          type="tel"
+          name="" id=""
+          value={telefone}
+          onChange={(event)=> setTelefone(event.target.value)}
+        />
+        
+        <label htmlFor="email"> Email:  </label>
+        <input
+          type="email"
+          name="" id=""
+          value={email}
+          onChange={(event)=> setEmail(event.target.value)}
+        />
 
-          <br></br>
-
-          <label htmlFor="telefone"> Telefone:</label>
-          <input
-            type="tel"
-            name="telefone-contato"
-            id="telefone"
-            value={numero}
-            onChange={(event) => setNumero(event.target.value)}
-          />
-
-          <br></br>
-          
-          <label htmlFor="email"> Email:</label>
-          <input
-            type="text"
-            name="email-contato"
-            id="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-          />
-          <button>Enviar</button>
-        </div>
+        <button>Cadastre-se</button>
       </form>
-
-      {listaContatos.map((contato, index) => (
-        <div key={index}>
-          <p>{contato.nomeSalvo}</p>
-          <p>{contato.telefoneSalvo}</p>
-          <p>{contato.emailSalvo}</p>
-          <button onClick={() => deletar(index)}>Excluir</button>
+    <div className="DadosSalvos">
+      {listaContatos.map((contato, index) => 
+        <div key={index} className="Contato">
+          <h2>Contato {index + 1}</h2>
+          <p><strong>Nome:</strong> {contato.nomeSalvo}</p> 
+          <p><strong>Telefone:</strong> {contato.telefoneSalvo}</p>
+          <p><strong>Email:</strong> {contato.emailSalvo}</p>
+        <div className="Botao">  <button onClick={() => deletar(index)}>Deletar</button>  </div>
         </div>
-      ))}
+      
+      )}
+      </div>
     </main>
+    </div>
   );
 }

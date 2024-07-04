@@ -1,28 +1,24 @@
-export default function Header(){
+export default function Header() {
+  return (
+    <header>
+      <div className="container">
+        <div id="hocks">
+          <img src="Images/hocks.jpeg" alt="Hocks Logo" />
+        </div>
 
-    return(
-        <header>
-            <div>
-                <img id="logo" src="./imagens/logonike.png"/>
-            </div>
-           
-            
-            <div id="lista">
-              <ul>
-                <li>Ofertas</li>
-                <li>Lançamentos</li>
-                <li>Masculino</li>
-                <li>Feminino</li>
-                <li>Infantil</li>
-                <li>SNKRS</li>
-              </ul>
-            </div>
-            
-            <div id="fvsacola">
-              <img id="favorito" src="./imagens/favorito.png"/>
-              <img id="sacola" src="./imagens/sacola.png"/>
-            </div>
-
-        </header>
-    );
+        <div id="lista">
+          <ul>
+            <li>SOBRE</li>
+            <li>LOJAS</li>
+            <li>EQUIPE</li>
+            <li>ENTRAR</li>
+          </ul>
+          </div>
+             <div className="CarrinhoElupa">
+          <img id="carrinho" src="Images/carrinhoHocks.jpeg" alt="Ícone de carrinho" />
+          <img id="lupa" src="Images/lupa.jpg" alt="Ícone de lupa" />
+          </div>
+      </div>
+    </header>
+  );
 }
