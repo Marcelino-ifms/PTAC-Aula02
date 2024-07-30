@@ -1,0 +1,326 @@
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(236, 234, 234);
+    color: black;
+}
+
+
+
+
+#fundoInput{
+    width: 50%;
+    height: 70px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding-top: 30px;
+    margin-top: 30px; 
+    border: 1px solid rgb(78, 78, 78);
+    font-family: 'Arial';
+    font-size: 17px;
+    
+}
+
+.classic {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+
+body{
+    margin: 0 0 0 0;
+    font-family: Arial, sans-serif;
+}
+
+#logo{
+    
+    width: 95px;
+    height: 35px;
+    float: left;
+    
+    padding-left: 25px;
+}
+
+#fvsacola{
+  text-align: end;
+  padding-top: 10px;
+}
+
+
+li {
+    list-style-type: none;
+    display:inline-block;
+    margin-left: 27px;
+    font-family: 'Arial';
+    font-size: 18px;
+ }
+
+ #lista{
+    float: left;
+   
+ }
+
+ #lista ul {
+  list-style: none;
+  padding: 16px;
+  margin: 19px;
+ }
+
+#lista li {
+  margin-bottom: 10px; 
+}
+
+#carrinho,
+#lupa {
+  margin-left: 10px; 
+}
+
+ footer{
+    margin-top: 290px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.redes-sociais {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+  }
+
+  .redes-sociais li{
+    width: 100px;
+  }
+  
+
+  .tamanhoDaRedesocial{
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .tamanhoDaRedesocial{
+    font-size: 18px;
+    margin: 0;
+    font-family: Arial;
+  }
+
+
+.tamanhoDaRedeS{
+    width: 65px;
+    height: 60px;
+  }
+  
+  .tamanhoDaRedeInsta{
+    width: 50px;
+    height: 50px;
+    opacity : 1.8;
+    margin-bottom: 5px;
+  }
+
+
+.descricoes{
+    line-height: 7.0px;
+    text-align: center;
+    color: white;
+    padding-top: 6px;
+    font-family: Arial;
+  }
+
+  #transparente{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  color: black;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px; 
+}
+
+body {
+  margin: 0 0 0 0;
+}
+
+
+
+ul {
+
+  position: absolute;
+}
+
+#hocks {
+  width: 48%;
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#hocks img {
+  max-width: 100%; 
+}
+
+#carrinho {
+  height: 44px;
+  float: left;
+}
+
+ul {
+  font-family: Sans-serif;
+  float: left;
+
+}
+
+#lupa {
+  width: 45px;
+  height: 40px;
+}
+
+
+
+/* footer */
+footer {
+  border-top: 1px solid black;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+}
+
+
+#hocksFooter {
+  text-align: center;
+}
+
+#redes-sociais {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+#redes-sociais li {
+  width: 100px;
+}
+
+#tamanhoDaRedesocial {
+  font-size: 18px;
+  margin: 0;
+
+}
+
+#tamanhoDaRedeS {
+  width: 65px;
+  height: 60px;
+}
+
+#tamanhoDaRedeInsta {
+  width: 50px;
+  height: 50px;
+  opacity: 1.8;
+}
+
+#descricoes {
+  line-height: 7.0px;
+  text-align: center;
+  color: white;
+  padding-top: 24px;
+  font-family: Arial;
+}
+
+#transparente {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#arrasta {
+  width: 100%;
+}
+
+.CarrinhoElupa{
+  float: left;
+  margin-left: 427px;
+  margin-top: 20px;
+}
+
+.Registro {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 40px auto 0 auto;
+  }
+
+
+.DadosSalvos {
+  margin-top: 20px;
+}
+
+.Botao {
+  font-family: Arial;
+  margin-left: auto;
+  height: 20px;
+}
+
+
+
+.Formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+p{
+  padding-left: 5px;
+}
+
+input{
+height: 20px;
+}
+
+.Contato p{
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  margin-left: 10px;
+}
+
+.Botao button{
+  font-family: Arial;
+}
+
+Botao button:hover{
+  background-color: red;
+  color: white;
+}
+
